@@ -1,0 +1,36 @@
+﻿@using introMVC.Models
+@model List<introMVC.Models.iteam>
+
+@{
+    Layout = null;
+    //string message = ViewBag.Message;
+    //iteam aiIteam = ViewBag.iteam;
+    
+}
+
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Save</title>
+</head>
+<body>
+<div>
+    @*message*@
+    @*@ViewBag.Message*@
+    @*@aiIteam.id
+    <br/>
+    @aiIteam.Name*@
+    @*@Model.Name
+    <p>gghgdhagh</p>*@
+    @foreach (iteam aiIteam in Model)
+    {
+        <P>@aiIteam.Name</P>
+    }
+</div>
+</body>
+</html>

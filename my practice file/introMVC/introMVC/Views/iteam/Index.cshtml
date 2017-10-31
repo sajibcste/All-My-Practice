@@ -1,0 +1,57 @@
+﻿@using introMVC.Models
+
+@{
+    Layout = null;
+    List<Catagorie> catagories = ViewBag.catagories;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+<div>
+      @ViewBag.Message
+    <form method="POST">
+        <table>
+            <tr>
+                <td><label for="Name">Name</label></td>
+                <td><input type="text" id="Name" name="Name"/></td>
+
+            </tr>
+            <tr>
+                <td><label for="price">Price</label></td>
+                <td><input type="text" id="price" name="price"/></td>
+
+            </tr>
+            <tr>
+
+                <td><label for="catgori">Catagorie</label></td>
+                <td>
+                    <select id="Catagoriatagori" name="Catagori">
+                        @foreach (Catagorie catagorie in catagories)
+                        {
+                            <option value="@catagorie.id">@catagorie.name</option>
+                        }
+                    </select>
+                </td>
+
+
+
+            </tr>
+            <tr>
+                <td></td>
+
+                <td><input type="submit" value="submit"/></td>
+
+            </tr>
+</table>
+
+
+    </form>
+</div>
+</body>
+</html>

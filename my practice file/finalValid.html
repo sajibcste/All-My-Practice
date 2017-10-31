@@ -1,0 +1,26 @@
+    <!DOCTYPE html><br><html lang="en"><head>  
+    <meta charset="utf-8">  
+    <title>JavaScript Field Label Form Validation </title>  
+    <meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />  
+    <meta name="description" content="This document is an example of JavaScript Field label form validation using a sample registration form. " />  
+    <link rel='stylesheet' href='js-field-level-form-validation.css' type='text/css' />  
+    <script src="field-level-sample-registration-form-validation.js"></script>  
+    </head>  
+    <body onload="firstfocus();">  
+    <h1>JavaScript Field Label Form Validation </h1>  
+    <h2>Use tab key or mouse to go next field</h2><br><form name='registration'">  
+    <ul>
+	 <li><label for="email">Name[Maximum 20 character] :</label></li>
+	  <li><input type="text" name="Name" size="50" onblur="ValidateName()" /></li> 
+	 <li><label for="email">Email [Valid email] :</label></li>  
+    <li><input type="text" name="email" size="50" onblur="ValidateEmail()" /></li> 
+     <li><label for="passid">Phone [Max & min 11 digit] :</label></li>  
+    <li><input type="password" name="passid" size="12" onblur="passid_validation(3)"/></li> 	
+    <li><label for="userid">age [18 to 40 only] :</label></li>  
+    <li><input type="text" name="userid" size="12" onblur="userid_validation(18,40)"/></li>    
+     
+    <li><input type="submit" name="submit" value="Submit" onclick="alert('Form submitted successfully')" /></li>  
+    </ul>  
+    </form>  
+    </body>  
+    </html>  

@@ -1,0 +1,40 @@
+﻿@using MVC.Models
+@model List<MVC.Models.Iteam>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+<div>
+   
+        <table border="1">
+            <thead>
+            <tr>
+                <td>Id</td>
+                <td>Name</td>
+                <td>Price</td>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (Iteam iteam in Model)
+            {
+                <tr>
+                    <td>@iteam.Id</td>
+                    <td>@iteam.Name</td>
+                    <td>@iteam.Price</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+        
+    
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+﻿
+@using MVC.Models
+@model MVC.Models.Iteam
+
+@{
+    Layout = null;
+    Iteam iteam = ViewBag.iteam;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SaveResult</title>
+</head>
+<body>
+<div>
+    @*@ViewBag.message*@
+    @*@iteam.Id
+    <br/>
+    @iteam.Name
+    <br/>
+    @iteam.Price*@
+    @Model.Id
+    <br/>
+    @Model.Name
+    <br/>
+    @Model.Price
+
+</div>
+</body>
+</html>

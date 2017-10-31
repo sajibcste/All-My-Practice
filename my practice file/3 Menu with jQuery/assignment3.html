@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+
+<title>Slide Down Menu With jQuery</title>
+    
+<link rel="stylesheet" href="css/style.css" />
+    
+<!-- js -->
+<script src="js/jquery-3.1.1.js"></script>
+<script>
+    $(document).ready(function() {
+        $( '.dropdown' ).hover(
+            function(){
+                $(this).children('.sub-menu').slideDown(500);
+            },
+            function(){
+                $(this).children('.sub-menu').slideUp(350);
+            }
+        );
+    }); // end ready
+</script>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+
+
+        <h1 align="center">Slide Down Menu</h1>
+        <h2 align="center"></h2>
+
+<nav>
+    <ul class="content clearfix">
+        <li class="dropdown">
+            <a href="#">Home</a>
+            
+            <ul class="sub-menu">
+                
+                <li class="dropdown">
+                	
+                    <a href="#">About Us</a>
+                    
+                    	<ul class="sub-menu">
+                        	<li><a href="#">Mission</a></li>
+                        	<li><a href="#">Vision</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="dropdown">
+        	<a href="#">Departments</a>
+        	<ul class="sub-menu">
+        		<li class="dropdown">
+                    <a href="#">UG</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Applied MATH</a></li>
+                        <li><a href="#">CSTE</a></li>
+                        <li><a href="#">Pharmacy</a></li>
+                       
+                    </ul>
+                 </li>
+                 <li class="dropdown">
+                    <a href="#">PG</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">M.E CSTE</a></li>
+                        <li><a href="#">M.Sc. Math</a></li>
+                    </ul>
+                 </li>
+        	</ul>
+			 <li class="dropdown">
+        	<a href="#">Contact Us</a>
+        	<ul class="sub-menu">
+
+             <li><a href="#">Location</a></li>
+             <li><a href="#">Contact Details</a></li>
+        	</ul>
+
+    </ul>
+</nav>
+</div>
+
+</body>
+</html>
